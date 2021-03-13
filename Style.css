@@ -1,0 +1,509 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face{
+	font-family: Shabnam;
+	src: url("Fonts/Shabnam.ttf");
+}
+
+:root{
+	scroll-behavior: smooth;
+}
+
+*{
+	margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{	
+	font-family: Shabnam;
+	direction: rtl;
+	font-size: 16px;
+	background: url("Images/Background/Background1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+h1,h2,h3,h4{
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+h1{
+	font-size: 1.6em;
+}
+
+h2{
+	font-size: 1.3em;
+}
+
+h3{
+	font-size: 1.2em;
+}
+
+p{
+	margin: 10px 0;
+}
+
+input{
+	outline: none;
+	font-size: 16px;
+	font-family: Shabnam;
+	border: 1px solid black;
+}
+
+textarea{
+	outline: none;
+	font-size: 16px;
+	font-family: Shabnam;
+	padding: 10px;
+	border: 1px solid black;
+	min-width: 40vw;
+	min-height: 20vh;
+}
+
+button{
+	outline: none;
+	font-size: 16px;
+	font-family: Shabnam;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled){
+    cursor: pointer;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+/****************************** Header ******************************/
+
+
+
+/****************************** Top Menu ******************************/
+
+.Top_Menu{
+	margin: 0;
+	background-color: rgb(5,34,87);
+	color: white;
+	padding: 10px 0;
+	font-size: 12px;
+	text-align: right;
+}
+
+.Top_Menu ul{
+	display: inline;
+}
+
+#topmL{
+	float: left;
+}
+
+.Top_Menu li{
+	display: inline;
+	list-style: none;
+	margin: 0 10px;
+	transition: .2s;
+}
+
+.Top_m_Icon{
+	width: 20px;
+	height: 1%;
+}
+
+.Top_Menu a{
+	color: white;
+	transition: .2s;
+}
+
+.Top_Menu a:hover{
+	color: orangered;
+}
+
+/****************************** Main Menu ******************************/
+
+.Main_Menu{
+	background: #0e6fef;
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 40px;
+}
+
+.Main_Menu a{
+	padding: 10px;
+}
+
+.Main_Menu a:hover{
+	border-bottom: 5px solid #0e6fef;
+	border-radius: 10px;
+	color: white;
+}
+
+.Main_Menu li{
+	display: inline;
+	list-style: none;
+	margin: 0 10px;
+}
+
+.Menu_SelectH{
+	border-bottom: 5px solid #0e6fef;
+	border-radius: 10px;
+	color: white;
+}
+
+/*
+.Menu_SelectF{
+	color: red;
+}
+*/
+
+/****************************** Top Middle ******************************/
+
+.TopMiddle{
+	text-align: center;
+	margin-bottom: 40px; 
+}
+
+.TopMiddle div{
+	display: inline-table;
+	margin: 0 10px;
+	vertical-align: top;
+}
+
+.LogoTop img{
+	width: 180px;
+	height: 140px;
+}
+
+.SearchBox{
+	width: 40vw;
+	padding: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: none;
+	vertical-align: middle;
+	margin: 0;
+	
+}
+.SearchBox:focus{
+	border: 1px solid blue;
+	border-left: 0;
+}
+
+.btnSearch{
+	background: #0e6fef;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: none;
+	transition: .2s;
+	margin: 0;
+}
+
+.btnSearch img{
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+.btnSearch:hover{
+	background: #A10CD1;
+	border: 1px solid #A10CD1;
+}
+
+.telNum_Top{
+	background: #0e6fef;
+	padding: 10px;
+	border-radius: 10px;
+	color: white;
+	transition: .2s;
+}
+
+.telNum_Top img{
+	width: 10px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.telNum_Top:hover{
+	background: linear-gradient(90deg,#A10CD1,#0e6fef);
+}
+
+/****************************** Banner ******************************/
+
+.BannerImg{
+	text-align: center;
+	min-height: 500px;
+}
+
+.BannerImg img{
+	width: 60%;
+	border-radius: 30px;
+	transition: .2s;
+	position: absolute;
+	transform: translate(50%);
+	animation-name: SlidBanner;
+	animation-duration: 15s;
+	animation-iteration-count:	infinite;
+	overflow: hidden;
+}
+
+
+
+.BannerImg img:first-child{
+	opacity: 100;
+	z-index: 10;
+	animation-delay: 5s;
+}
+
+.BannerImg img:nth-child(2){
+	opacity: 100;
+	z-index: 9;
+	animation-delay: 10s;
+}
+
+.BannerImg img:nth-child(3){
+	opacity: 100;
+	z-index: 8;
+	animation-delay: 15s;
+}
+
+@keyframes SlidBanner{
+	3%{opacity: 0;}
+	60%{opacity: 0;}
+	63%{opacity: 100;}
+	
+}
+
+/****************************** Product_Menu ******************************/
+
+.CatProduct{
+	width: 400px;
+	text-align: center;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-bottom: 2px solid blue;
+}
+
+.Product_Menu{
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+	background: #D4DFE7;
+}
+
+.P_M{
+	display: inline-table;
+	margin: 0 30px;
+	padding: 10px;
+	transition: .2s;
+}
+
+.P_M:hover{
+	transform: scale(1.3);
+	border-radius: 10px;
+	color: black;
+}
+
+.Product_Menu img{
+	width: 60px;
+	height: 60px;
+}
+
+/****************************** Main ******************************/
+
+main{
+	padding: 20px 10px;
+	background: white;
+	min-height: 50vh;
+}
+
+/****************************** Contact Us Form ******************************/
+
+.Cont_Main{
+	text-align: center;
+}
+
+.Contact_{
+	display: inline-table;
+	vertical-align: middle;
+	margin: 0 5px;
+}
+
+.Frm_Contact{
+	text-align: right;
+}
+
+.Frm_Contact input{
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 6px 10px;
+	width: 40vw;
+}
+
+.Frm_Contact input:focus{
+	border: 1px solid blue;
+}
+
+.Frm_Contact textarea{
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.Frm_Contact textarea:focus{
+	border: 1px solid blue;
+}
+
+.Frm_Contact button{
+	margin: 0 10px;
+	padding: 2px 10px;
+	border-radius: 10px;
+	background: #0e6fef;
+	color: white;
+}
+
+.Frm_Contact button:hover{
+	background: #A10CD1;
+}
+
+iframe{
+	width: 40vw;
+	height: 50vh;
+	margin-top: 10px;
+}
+
+.alert-dismissible .btn-close {
+	right: auto;
+	left: 0;
+}
+
+/****************************** Footer ******************************/
+
+footer{
+	padding: 20px;
+	text-align: center;
+    background: rgba(5,34,87,.7);
+}
+
+footer div{
+	padding: 20px;
+	display: inline-table;
+	text-align: right;
+	color: white;
+	min-width: 20vw;
+}
+
+.footer_div{
+	border-left: 1px solid white;
+}
+
+.Title_Footer{
+	font-size: 1.3em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.instaFooter{
+	background: linear-gradient(50deg,#dd5718,#dd1818,#7e18dd);
+	padding: 5px;
+	border-radius: 50px;
+/*	transition: .2s;*/
+}
+
+.telegFooter{
+	background: #1a62c2;
+	padding: 5px;
+	border-radius: 50px;
+/*	transition: .2s;*/
+}
+
+.twittFooter{
+	background: #2e80eb;
+	padding: 5px;
+	border-radius: 50px;
+/*	transition: .2s;*/
+}
+
+/*
+.instaFooter:hover, .telegFooter:hover, .twittFooter:hover{
+	transform: scale(1.1);
+}
+*/
+
+.StyleLink{
+	transition: .2s;
+}
+
+.StyleLink:hover{
+	transform: scale(1.1);
+}
+
+
+footer img{
+	width: 20px;
+	height: 1%;
+	margin: 0 5px;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
