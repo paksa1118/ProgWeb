@@ -1,0 +1,315 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/****************************** Main ******************************/
+
+.main_userPanel, .aside_userPanel{
+	float: left;
+}
+
+.main_userPanel{
+	width: 80%;
+	background: none;
+	padding: 30px 60px;
+}
+
+.Panel_{
+	background: rgba(255,255,255,.8);
+	padding: 20px;
+	border-radius: 20px;
+	min-height: 200px;
+	opacity: 100;
+	transition: 1s;
+}
+
+/****************************** aside ******************************/
+
+.aside_userPanel{
+	height: 100%;
+	width: 20%;
+	background-color: rgba(5,34,87,.8);
+	color: white;
+	position: fixed;
+  	position: -webkit-fixed;
+  	top: 0;
+}
+
+.asidMenu{
+	margin: 20px 5px;
+	max-height:  80%;
+	overflow: auto;
+}
+
+.aside_menu{
+	padding: 15px 10px;
+	margin: 5px 10px;
+	transition: .5s;
+}
+
+.aside_menu:hover{
+	background: #0C3EA4;
+	color: white;
+	border-radius: 10px;
+}
+
+.baner_aside{
+	height: 100px;
+	background: url("../Images/Background/Background7.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 20px;
+}
+
+.baner_aside div{
+	position: relative;
+	top: 20px;
+	font-size: 1.2em;
+	color: black;
+	font-weight: 600;
+}
+
+.aside_userPanel a{
+	cursor: pointer;
+}
+
+.aside_MenuIcon{
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+}
+
+
+
+.Selected{
+	background: #0C3EA4;
+	color: white;
+	border-radius: 10px;
+}
+
+
+
+
+.asidMenu::-webkit-scrollbar{
+	width: 3px;
+}
+
+.asidMenu::-webkit-scrollbar-track{
+
+}
+
+.asidMenu::-webkit-scrollbar-thumb{
+	background: rgba(255,255,255,.7);
+	border-radius: 10px;
+}
+
+/****************************** Dashboard ******************************/
+
+.User_Info{
+	text-align: center;
+}
+
+.userImage{
+	width: 150px;
+	height: 150px;
+	vertical-align: middle;
+}
+
+.User_Name{
+	font-weight: 600;
+	font-size: 1.3em;
+}
+
+.Title_MessagesList{
+	width: 100%;
+	display: grid;
+	grid-template-columns: .8fr .4fr .5fr .8fr;
+	border-radius: 20px;
+	margin: 10px 0;
+}
+
+.Title_MessagesList div{
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.M_Card{
+	width: 100%;
+	display: grid;
+	grid-template-columns: .8fr .4fr .8fr .8fr;
+	background: white;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 8px 1px rgba(0,0,0,.5);
+}
+
+
+.M_Card div{
+	padding: 10px;
+}
+
+.Mname:hover{
+	color: blue;
+	cursor: pointer;
+}
+
+.M_detail{
+	background: #00356C;
+	border-radius: 10px;
+	padding: 3px 20px;
+	color: white;
+}
+
+.M_Edit{
+	background: #059238;
+	border-radius: 10px;
+	padding: 3px 20px;
+	color: white;
+}
+
+.M_Delete{
+	background: #FF4346;
+	border-radius: 10px;
+	padding: 3px 20px;
+	color: white;
+}
+
+/****************************** Edit User Info ******************************/
+
+.EditUserPage{
+	text-align: center;
+}
+
+.EditUserPage input{
+	width: 40%;
+	margin: 20px 10px;
+	padding: 3px 5px;
+	border-width: 0;
+	border-bottom: 2px solid gray;
+	vertical-align: middle;
+	background: none;
+}
+
+.EditUserPage input:focus{
+	border-bottom: 2px solid blue;
+}
+
+.EditUserPage button{
+	width: 20%;
+	padding: 5px 10px;
+	border-radius: 10px;
+	background: #1545C8;
+	color: white;
+	border: 0;
+	transition: .3s;
+}
+
+.EditUserPage button:hover{
+	background: orange;
+}
+
+/****************************** Users List ******************************/
+
+.Title_UserList{
+	width: 100%;
+	display: grid;
+	grid-template-columns: .6fr .4fr .8fr .2fr;
+	border-radius: 20px;
+	margin: 10px 0;
+}
+
+.Title_UserList div{
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.U_Card{
+	width: 100%;
+	display: grid;
+	grid-template-columns: .6fr .4fr .8fr .2fr;
+	background: white;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 8px 1px rgba(0,0,0,.5);
+}
+
+
+.U_Card div{
+	padding: 10px;
+}
+
+.Uname:hover{
+	color: blue;
+	cursor: pointer;
+}
+
+#btn_UsersList{
+	display: grid;
+	grid-template-columns: .1fr .1fr .1fr;
+	padding: 0;
+	margin-top: 20px;
+}
+
+#btn_UsersList div{
+	padding: 0;
+	margin-left: 5px;
+}
+
+.U_detail{
+	background: #00356C;
+	border-radius: 10px;
+	padding: 3px 20px;
+	color: white;
+}
+
+.U_Edit{
+	background: #059238;
+	border-radius: 10px;
+	padding: 3px 20px;
+	color: white;
+}
+
+.U_Delete{
+	background: #FF4346;
+	border-radius: 10px;
+	padding: 3px 20px;
+	color: white;
+}
+
+.userImg{
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+}
+
+.UP_Icon{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.DownIcon_UserP{
+	widows: 10px;
+	height: 10px;
+	transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

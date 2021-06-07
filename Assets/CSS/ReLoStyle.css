@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/****************************** Cover ******************************/
+
+.ReLoCover{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 500px;
+	transform: translate(-50%, -50%);
+	min-height: 500px;
+	padding: 10px 30px;
+	border-radius: 20px;
+	background: rgba(0,0,0,.6);
+	box-shadow: 0 15px 25px rgba(0,0,0,.9);
+	color: #fff;
+	text-align: center;
+}
+
+.btnReLo{
+	outline: none;
+	font-size: 16px;
+	font-family: Shabnam;
+	cursor: pointer;
+	width: 30%;
+}
+
+.ReLoCover img{
+	width: 100px;
+	height: 100px;
+	vertical-align: middle;
+}
+
+.ReLoCover p{
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.ReLoCover div{
+	margin: 20px 0;
+}
+
+.ReLoCover input{
+	width: 90%;
+	padding: 10px;
+	border-width: 0;
+	border-bottom: 2px solid gray;
+	vertical-align: middle;
+	background: none;
+	color: #fff;
+	margin-bottom: 3px;
+}
+
+.ReLoCover input::-webkit-input-placeholder {
+    color: burlywood;
+}
+
+.ReLoCover input:-moz-placeholder {
+   color: burlywood;
+}
+
+.ShowPass{
+	cursor: pointer;
+	position: absolute;
+}
+
+#ShowPass{
+	transform: translateX(50%);
+	margin-right: 30%;
+}
+
+.btnReLo{
+	border-radius: 20px;
+	border: none;
+	padding: 5px;
+	background: white;
+	transition: .3s;
+}
+
+.btnReLo:hover{
+	background: linear-gradient(90deg,cyan,blue);
+	color: white;
+}
+
+.linkMP a{
+	color: orangered;
+	transition: .2s;
+}
+
+.linkMP a:hover{
+	color: orange;
+}
+
+.ReLoCover .error{
+	border-bottom: 2px solid red;
+}
+
+.text_Error{
+	color: red;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
